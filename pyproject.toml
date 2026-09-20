@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tidy-cli"
+version = "1.0.0"
+description = "Organize messy folders, find duplicate files and see where your disk space went. Every change can be undone."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "CodifyStudio2026" }]
+dependencies = []
+keywords = ["cli", "files", "organizer", "duplicates", "cleanup"]
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Topic :: System :: Filesystems",
+  "Topic :: Utilities",
+]
+
+[project.scripts]
+tidy = "tidy_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/CodifyStudio2026/tidy-cli"
+Issues = "https://github.com/CodifyStudio2026/tidy-cli/issues"
